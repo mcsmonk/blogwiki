@@ -1,14 +1,10 @@
 [
  {
-  "name": "aws",
-  "size": 1
- },
- {
   "name": "how-to",
   "size": 1
  },
  {
-  "name": "jwp",
+  "name": "jekyll",
   "size": 1
  },
  {
@@ -16,7 +12,23 @@
   "size": 1
  },
  {
+  "name": "linux",
+  "size": 2
+ },
+ {
+  "name": "python",
+  "size": 1
+ },
+ {
+  "name": "record",
+  "size": 3
+ },
+ {
   "name": "study",
+  "size": 3
+ },
+ {
+  "name": "wsl",
   "size": 1
  }
 ]
