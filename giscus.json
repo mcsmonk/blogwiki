@@ -1,3 +1,11 @@
 {
-  "origins": ["https://sunghyunjin.com/blogwiki"]
+  "origins": [
+    "https://sunghyunjin.com",
+    "https://sunghyunjin.com/blogwiki",
+    "https://mcsmonk.github.com/blogwiki"
+  ],
+  "originsRegex": [
+    "http://localhost:[0-9]+",
+    "http://localhost:[0-9]+/blogwiki"
+  ]
 }
