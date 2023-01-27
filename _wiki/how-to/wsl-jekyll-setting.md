@@ -1,7 +1,7 @@
 ---
-layout  : post
-title   : WSL에서 jekyll 블로그 세팅
-summary : jekyll 을 이용한 github page 세팅
+layout  : wiki
+title   : WSL에서 jekyll 기반 ghpage 세팅하기
+summary :
 date    : 2020-02-04 20:00:00 +0900
 updated : 2020-02-21 18:30:00 +0900
 tag     : record jekyll wsl
@@ -9,6 +9,8 @@ resource: 7A/8A1FBD-A544-4A8D-9A66-F720E90E6BBB
 toc     : true
 comment : true
 public  : true
+parent  : [[how-to]]
+latex   : false
 ---
 * TOC
 {:toc}

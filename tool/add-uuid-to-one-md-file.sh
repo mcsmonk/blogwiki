@@ -3,8 +3,8 @@
 MD_FILES=$1
 
 UUID=`uuidgen`
-UUID_HEAD=`echo $UUID | cut -c -2`
-UUID_TAIL=`echo $UUID | cut -c 3-`
+UUID_HEAD=`echo $UUID | cut -c -6`
+UUID_TAIL=`echo $UUID | cut -c 7-`
 echo $MD_FILES
 echo $UUID
 echo $UUID_HEAD

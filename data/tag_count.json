@@ -1,5 +1,9 @@
 [
  {
+  "name": "diary",
+  "size": 1
+ },
+ {
   "name": "how-to",
   "size": 1
  },
@@ -26,6 +30,10 @@
  {
   "name": "study",
   "size": 3
+ },
+ {
+  "name": "unclassified",
+  "size": 1
  },
  {
   "name": "wsl",

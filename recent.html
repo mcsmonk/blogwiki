@@ -9,9 +9,9 @@ adsense: false
 {% endfor %}
 {% assign documents = documents | sort: 'updated' | reverse %}
 <div id="app">
-    <H3 class="indent">최근 변경된 문서</H3>
+    <H3 class="indent">recent</H3>
     <ul class="post-list">
-{% for doc in documents %}{% if doc.public != false and doc.title != 'wiki' %}
+{% for doc in documents %}{% if doc.public != false and doc.title != 'index' and doc.title != 'Category' %}
         <li>
             <div>
                 <a class="post-link" href="{{ doc.url | prepend: site.baseurl }}">

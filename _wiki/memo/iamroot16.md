@@ -1,7 +1,7 @@
 ---
-layout  : post
+layout  : wiki
 title   : iamroot16 History
-summary : iamroot 16기 스터디 히스토리
+summary :
 date    : 2019-08-18 20:00:00 +0900
 updated : 2020-12-12 20:00:00 +0900
 tag     : study linux record
@@ -9,6 +9,8 @@ resource: 8F/0E134B-8673-40F3-8DB7-1A615E84614E
 toc     : true
 comment : true
 public  : true
+parent  : [[diary]]
+latex   : false
 ---
 * TOC
 {:toc}

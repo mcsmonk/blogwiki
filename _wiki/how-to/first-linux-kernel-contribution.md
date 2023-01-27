@@ -1,7 +1,7 @@
 ---
-layout  : post
+layout  : wiki
 title   : 리눅스 커널 첫 컨트리뷰션 과정
-summary : 패치 제출 및 과정 정리
+summary :
 date    : 2020-08-02 20:00:00 +0900
 updated : 2020-09-21 22:00:00 +0900
 tag     : study linux record
@@ -9,12 +9,14 @@ resource: DE/BDA86C-A752-4D5B-BD20-E8DB62D1FA2C
 toc     : true
 comment : true
 public  : true
+parent  : [[how-to]]
+latex   : false
 ---
 
 
 # 첫 커널 패치 제출 시도 1 : 2020.08.02
 
-- [iamroot16](https://github.com/iamroot16/linux) 스터디 진행 중에 발견한 버그를 경험삼아 커널 패치 제출 과정을 해봄
+- [iamroot16](https://github.com/iamroot16/linux) 스터디 진행 중에 발견한 아주 아주 사소한 버그를 경험삼아 커널 패치 제출 과정을 해봄
 - [AustinKim](http://rousalome.egloos.com/)님의 잘 정리된 [커널 제출 방법](https://kldp.org/node/162104)을 그대로 수행
 - 위 글이 있지만 내가 직접 리눅스 커널 패치 제출을 위해 사용한 터미널 명령어 기록을 위해 정리
 

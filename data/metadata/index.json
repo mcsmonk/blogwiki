@@ -1,9 +1,11 @@
 {
  "type": "wiki",
- "title": "Wiki",
+ "title": "index",
  "url": "/wiki/index",
- "updated": "2021-07-25 18:00:13 +0900",
+ "updated": "2023-01-27 23:33:03 +0900",
  "children": [
-  "how-to"
+  "_category/diary",
+  "_category/how-to",
+  "_category/unclassified"
  ]
 }
