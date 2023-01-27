@@ -1,6 +1,7 @@
 # Site settings
 title: Sunghyun Jin's Blog+WIKI
 url: "https://mcsmonk.github.io/blogwiki"
+dnsurl: "https://sunghyunjin.com"
 baseurl: "/blogwiki"
 description: >
     Sunghyun Jin's Blog and Wiki

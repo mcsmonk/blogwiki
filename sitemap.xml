@@ -3,23 +3,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>{{ site.baseurl | prepend: site.url }}/tag/</loc>
+        <loc>{{ site.baseurl | prepend: site.dnsurl }}/tag/</loc>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>{{ site.url }}/wiki/index/</loc>
+        <loc>{{ site.dnsurl }}/wiki/index/</loc>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>{{ site.url }}/blog/</loc>
+        <loc>{{ site.dnsurl }}/blog/</loc>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
 {% for post in site.posts %}
     <url>
-        <loc>{{ site.url }}{{ post.url }}</loc>
+        <loc>{{ site.dnsurl }}{{ post.url }}</loc>
     {% if post.updated == null %}
         <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
     {% else %}
@@ -42,7 +42,7 @@
 {% for doc in documents %}
     {% if doc.public == true and doc.title != 'wiki index'%}
     <url>
-        <loc>{{ site.url }}{{ doc.url }}</loc>
+        <loc>{{ site.dnsurl }}{{ doc.url }}</loc>
         {% if doc.updated == null %}
             <lastmod>{{ doc.date | date_to_xmlschema }}</lastmod>
         {% else %}

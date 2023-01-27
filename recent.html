@@ -12,7 +12,7 @@ adsense: false
     <H3 class="indent">recent</H3>
     <ul class="post-list">
 {% for doc in documents %}
-{% if doc.public != false and doc.title != 'index' and doc.layout != 'category' and doc.title != 'Category' %}
+{% if doc.public != false and doc.title != 'index' %}
         <li>
             <div>
                 <a class="post-link" href="{{ doc.url | prepend: site.baseurl }}">
