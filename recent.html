@@ -2,7 +2,12 @@
 layout: home
 adsense: false
 ---
-{% assign documents = site.wiki | sort: 'updated' | reverse %}
+
+{% assign documents = site.wiki %}
+{% for post in site.posts %}
+    {% assign documents = documents | push: post %}
+{% endfor %}
+{% assign documents = documents | sort: 'updated' | reverse %}
 <div id="app">
     <H3 class="indent">최근 변경된 문서</H3>
     <ul class="post-list">

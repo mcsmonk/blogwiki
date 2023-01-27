@@ -6,7 +6,9 @@
     <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
     <meta name="description" content="{{ page.summary }}">
-    <meta name="google-site-verification" content="xD2UvBTOH6xxBi9MseahHz4Nt9u2vYZbgY2wVo7Bdyc" />
+
+    <meta name="google-site-verification" content="KY6rncWDfkrQ5dFbTxwFKxMo-CG078GBK8eEgsiECm8" />
+    <meta name="naver-site-verification" content="870d059fc32d46b27a49f219870481e72028a0f8" />
 
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -110,7 +112,16 @@
         <a id="random-button" class="site-title-right">random</a>
     </div>
     <div>
+        <a class="site-title-right" href="{{ site.baseurl }}/tag/">tag</a>
+    </div>
+    <div>
         <a class="site-title-right" href="{{ site.baseurl }}/wiki/root-index/">index</a>
+    </div>
+    <div>
+        <a class="site-title-right" href="{{ site.baseurl }}/wiki/index/">wiki</a>
+    </div>
+    <div>
+        <a class="site-title-right" href="{{ site.baseurl }}/blog/">blog</a>
     </div>
 </header>
 <script async src="{{ site.baseurl }}/js/shortcut.js"></script>

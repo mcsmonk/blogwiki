@@ -1,6 +1,6 @@
 ---
 layout  : category
-title   : ROOT
+title   : Wiki
 date    : 2017-11-26 12:42:03 +0900
 toc     : true
 public  : true
