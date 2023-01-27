@@ -1,15 +1,23 @@
 [
  {
+  "name": "개발자",
+  "size": 1
+ },
+ {
+  "name": "구름입력기",
+  "size": 1
+ },
+ {
+  "name": "소트웍스-앤솔러지",
+  "size": 1
+ },
+ {
+  "name": "프로그래밍-심리학",
+  "size": 1
+ },
+ {
   "name": "aws",
   "size": 2
- },
- {
-  "name": "bot",
-  "size": 1
- },
- {
-  "name": "chatbot",
-  "size": 1
  },
  {
   "name": "DI",
@@ -29,10 +37,6 @@
  },
  {
   "name": "hammerspoon",
-  "size": 1
- },
- {
-  "name": "heroku",
   "size": 1
  },
  {
@@ -64,10 +68,6 @@
   "size": 1
  },
  {
-  "name": "node-js",
-  "size": 1
- },
- {
   "name": "oop",
   "size": 1
  },
@@ -76,27 +76,7 @@
   "size": 17
  },
  {
-  "name": "telegram",
-  "size": 1
- },
- {
   "name": "vim",
-  "size": 1
- },
- {
-  "name": "개발자",
-  "size": 1
- },
- {
-  "name": "구름입력기",
-  "size": 1
- },
- {
-  "name": "소트웍스-앤솔러지",
-  "size": 1
- },
- {
-  "name": "프로그래밍-심리학",
   "size": 1
  }
 ]

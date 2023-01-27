@@ -40,7 +40,7 @@
         {% assign label = '#' %}
         {% assign link = '' %}
     {% elsif page <= 1 %}
-        {% assign link = site.url %}
+        {% assign link = link %}
     {% endif %}
 
     {% assign pageData = link | append: ',' | append: label | split: ',' %}
@@ -61,9 +61,9 @@
     <ul>
         <li>
 {% if page.url == '/blog/' %}
-            <a href="/blog">^</a>
+            <a>^</a>
 {% else %}
-            <a href="/blog" class="active">^</a>
+            <a href="{{ site.baseurl }}/blog" class="active">^</a>
 {% endif %}
         </li>
 
@@ -74,22 +74,22 @@
     {% endif %}
 
     {% assign label = pageData[1] %}
-    {% if link == site.url %}
+    {% if link == site.url | append: site.baseurl %}
         {% assign link = '/' %}
     {% endif %}
         <li class="page_number">
     {% if link == '' %}
             <a>{{ label }}</a>
     {% else %}
-            <a href="/blog{{ link }}" class="active">{{ label }}</a>
+            <a href="{{ site.baseurl }}/blog{{ link }}" class="active">{{ label }}</a>
     {% endif %}
         </li>
 {% endfor%}
         <li>
 {% if current == paginator.total_pages %}
-            <a href="/blog/page{{ paginator.total_pages }}">$</a>
+            <a>$</a>
 {% else %}
-            <a href="/blog/page{{ paginator.total_pages }}" class="active">$</a>
+            <a href="{{ site.baseurl }}/blog/page{{ paginator.total_pages }}" class="active">$</a>
 {% endif %}
         </li>
     </ul>

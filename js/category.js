@@ -9,7 +9,7 @@
      */
     const target = getTarget();
 
-    fetch(`/data/metadata/${target}.json`)
+    fetch(`/blogwiki/data/metadata/${target}.json`)
         .then(response => response.json())
         .then(function(data) {
             if (data == null) {
@@ -40,7 +40,7 @@
         for (let i = 0; i < children.length; i++) {
             const target = children[i];
 
-            fetch(`/data/metadata/${target}.json`)
+            fetch(`/blogwiki/data/metadata/${target}.json`)
                 .then(response => response.json())
                 .then(function(data) {
                     if (data == null) {

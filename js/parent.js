@@ -34,7 +34,7 @@
             return;
         }
 
-        fetch(`/data/metadata/${target}.json`)
+        fetch(`/blogwiki/data/metadata/${target}.json`)
             .then(response => response.json())
             .then(function(data) {
                 if (data == null) {

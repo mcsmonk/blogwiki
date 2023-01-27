@@ -1,16 +1,16 @@
 # Site settings
-title: 기계인간 John Grib
-url: "https://johngrib.github.io"
-baseurl: ""
+title: Sunghyun Jin's Blog+WIKI
+url: "https://mcsmonk.github.io/blogwiki"
+baseurl: "/blogwiki"
 description: >
-    기계인간 블로그
+    Sunghyun Jin's Blog and Wiki
 
 # My information
-email: johngrib82@gmail.com
-author: 기계인간 John Grib
-profile: 유물론자
-twitter_username: John_Grib
-github_username: johngrib
+email: mcsmonk@gmail.com
+author: Sunghyun Jin
+profile: mcsmonk
+twitter_username: mcsmonk_shj
+github_username: mcsmonk
 comment-support: utterances
 
 # Build settings
@@ -38,21 +38,21 @@ collections:
 
 # Comment Service
 giscus:
-  repo: johngrib/johngrib.github.io
-  repo_id: SAMPLE-VALUE
+  repo: mcsmonk/blogwiki
+  repo_id: R_kgDOI2VQEw
   category: Announcements
-  category_id: SAMPLE-VALUE
+  category_id: DIC_kwDOI2VQE84CT057
 
 google_analytics:
-  ua: SAMPLE-VALUE
-  encrypted_ua: THIS-IS-SAMPLE-VALUE
+  ua: G-KTR7QQR16E
+#  encrypted_ua: THIS-IS-SAMPLE-VALUE
 
 google_adsense:
-  client: SAMPLE-VALUE
+#  client: SAMPLE-VALUE
 
-blame: "https://github.com/johngrib/johngrib.github.io/blame/master/_wiki"
-edit: "https://github.com/johngrib/johngrib.github.io/edit/master/_wiki"
-issue: "https://github.com/johngrib/johngrib.github.io/issues/new"
+blame: "https://github.com/mcsmonk/blogwiki/blame/master/_wiki"
+edit: "https://github.com/mcsmonk/blogwiki/edit/master/_wiki"
+issue: "https://github.com/mcsmonk/blogwiki/issues/new"
 
 timezone: "Asia/Seoul"
 

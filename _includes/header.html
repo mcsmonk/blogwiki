@@ -15,31 +15,31 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:description" content="{{ page.summary }}">
-    <meta property="og:image" content="{{ site.url }}/resource/johngrib.png">
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="https://sunghyunjin.com/assets/img/seminar.jpg">
+    <meta property="og:url" content="{{ site.baseurl | prepend: site.url }}{{ page.url }}">
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@{{ site.twitter_username }}" />
-    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
+    <meta name="twitter:url" content="{{ site.baseurl | prepend: site.url }}{{ page.url }}" />
     <meta name="twitter:title" content="{{ page.title }}" />
     <meta name="twitter:description" content="{{ page.summary }}" />
 
-    <link rel="apple-touch-icon" sizes="57x57"        href="/resource/icon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60"        href="/resource/icon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72"        href="/resource/icon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76"        href="/resource/icon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114"      href="/resource/icon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120"      href="/resource/icon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144"      href="/resource/icon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152"      href="/resource/icon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180"      href="/resource/icon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/resource/icon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32"   href="/resource/icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96"   href="/resource/icon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16"   href="/resource/icon/favicon-16x16.png">
-    <link rel="manifest" href="/resource/icon/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57"        href="https://sunghyunjin.com/assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60"        href="https://sunghyunjin.com/assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72"        href="https://sunghyunjin.com/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76"        href="https://sunghyunjin.com/assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114"      href="https://sunghyunjin.com/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120"      href="https://sunghyunjin.com/assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144"      href="https://sunghyunjin.com/assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152"      href="https://sunghyunjin.com/assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180"      href="https://sunghyunjin.com/assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://sunghyunjin.com/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32"   href="https://sunghyunjin.com/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96"   href="https://sunghyunjin.com/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16"   href="https://sunghyunjin.com/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://sunghyunjin.com/assets/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/resource/icon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="https://sunghyunjin.com/assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
 {% if site.google_analytics.ua and site.google_analytics.encrypted_ua %}
@@ -74,7 +74,7 @@
             return ivHex+ctBase64;
         }
 
-        aesGcmDecrypt('{{ site.google_analytics.encrypted_ua }}', '{{ site.url }}')
+        aesGcmDecrypt('{{ site.google_analytics.encrypted_ua }}', '{{ site.baseurl | prepend: site.url }}')
             .then(function(ua) {
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
@@ -104,13 +104,13 @@
         <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
     </div>
     <div>
-        <a class="site-title-right" href="/about/">me</a>
+        <a class="site-title-right" href="{{ site.baseurl }}/about/">me</a>
     </div>
     <div>
         <a id="random-button" class="site-title-right">random</a>
     </div>
     <div>
-        <a class="site-title-right" href="/wiki/root-index/">index</a>
+        <a class="site-title-right" href="{{ site.baseurl }}/wiki/root-index/">index</a>
     </div>
 </header>
-<script async src="/js/shortcut.js"></script>
+<script async src="{{ site.baseurl }}/js/shortcut.js"></script>

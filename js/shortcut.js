@@ -4,11 +4,11 @@
 
     // 사이트 전체 문서 중 하나를 랜덤으로 선택해 열어줍니다.
     function goToRandomDocument() {
-        fetch(`/data/total-document-url-list.json`)
+        fetch(`/blogwiki/data/total-document-url-list.json`)
             .then(response => response.json())
             .then(function(data) {
                 const num = getRandomInt(0, data.length);
-                window.location.href = data[num];
+                window.location.href = '/blogwiki' + data[num];
             })
             .catch(function(error) {
                 console.log(error);

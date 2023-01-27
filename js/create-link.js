@@ -50,24 +50,24 @@
         // (태그, 타이틀 처리) "[[#tagName#]]{text}"를 <a href="/wiki/tagName#">text</a> 로 replace하여 링크를 만든다.
         //                           [[#           #]]      {            }
         content = content.replace(/\[\[#([^\[\]]+?)#\s*\]\]\{([^\{\}]+?)\}/g,
-            '<a href="/tag#$1" class="inner-link labeled-link" data-name="$1"><sup class="tagged-link"/></sup>$2</a>');
+            '<a href="/blogwiki/tag#$1" class="inner-link labeled-link" data-name="$1"><sup class="tagged-link"/></sup>$2</a>');
 
         // (태그 처리) "[[#tagName#]]"을 <a href="/wiki/tagName#">tagName</a> 로 replace하여 링크를 만든다.
         //                           [[#           #]]
         content = content.replace(/\[\[#([^\[\]]+?)#\s*\]\]/g,
-            '<a href="/tag#$1" class="inner-link labeled-link" data-name="$1"><sup class="tagged-link"/></sup>$1</a>');
+            '<a href="/blogwiki/tag#$1" class="inner-link labeled-link" data-name="$1"><sup class="tagged-link"/></sup>$1</a>');
 
         // (추가 타이틀 처리) 다음과 같은 문자열을 <a href="/wiki/document">document-name</a> 으로 replace하여 링크를 만든다.
         //  [[document]]{document-name}       => <a href="/wiki/document">document-name</a>
         //  [[/document]]{document-name}      => <a href="/wiki/document">document-name</a>
         //  [[/dir/document]]{document-name}  => <a href="/wiki/dir/document">document-name</a>
         content = content.replace(/\[\[\/?([^\[\]]+?)\s*\]\]\{([^\{\}]+?)\}/g,
-            '<a href="/wiki/$1" class="inner-link labeled-link" data-name="$1">$2</a>');
+            '<a href="/blogwiki/wiki/$1" class="inner-link labeled-link" data-name="$1">$2</a>');
 
         // "[[document]]"가 있다면 <a href="/wiki/document">document</a> 와 같이 replace하여 링크를 만든다.
         //  예제는 (추가 타이틀 처리)와 거의 비슷하다.
         content = content.replace(/\[\[\/?(.+?)\s*\]\]/g,
-            '<a href="/wiki/$1" class="inner-link no-labeled-link" data-name="$1">$1</a>');
+            `<a href="/blogwiki/wiki/$1" class="inner-link no-labeled-link" data-name="$1">$1</a>`);
 
         // (주석처리)에서 이스케이프한 문자열을 본래 표현하려 한 형식으로 되돌린다.
         content = content.replace(/\\\[\\\[(.+?)\\\]\\\]/g, '[[$1]]');
@@ -96,7 +96,7 @@
             .replace(/#.*$/, '');
 
         let status = undefined;
-        fetch(`/data/metadata/${target}.json`)
+        fetch(`/blogwiki/data/metadata/${target}.json`)
             .then(response => {
                 status = response.status;
                 return response.json()
@@ -123,7 +123,7 @@
     for (let i = 0; i < links.length; i++) {
         const link = links[i];
         const url = link.getAttribute('href');
-        if (/^(https?:\/\/)?johngrib\.github\.io/.test(url) || /^[\/#]/.test(url)) {
+        if (/^(https?:\/\/)?mcsmonk\.github\.io/.test(url) || /^(https?:\/\/)?sunghyunjin\.com/.test(url) || /^[\/#]/.test(url)) {
             // inner link
         } else {
             // external link
