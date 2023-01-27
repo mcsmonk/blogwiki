@@ -55,7 +55,7 @@
                     // 서브 문서들의 정보
                     const subDoc = (data.children && data.children.length > 0) ? `<div class="post-sub-document"> - 서브 문서: ${data.children.length} 개</div>` : '';
 
-                    const html = `<a href="${data.url}" class="post-link">${title}${date}${summary}${subDoc}</a>`;
+                    const html = `<a href="/blogwiki${data.url}" class="post-link">${title}${date}${summary}${subDoc}</a>`;
                     document.getElementById(`child-document-${i}`).innerHTML = html;
 
                     return;

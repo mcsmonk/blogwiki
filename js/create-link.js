@@ -14,7 +14,7 @@
         }
         tagList = tagList.split(/\s+/)
             .map(function(tag) {
-                return `<a href="/tag/#${tag}">#${tag}</a>`;
+                return `<a href="/blogwiki/tag/#${tag}">#${tag}</a>`;
             })
             .join(' ');
         tags[i].innerHTML = tagList;

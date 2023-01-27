@@ -17,7 +17,7 @@
         }
         var pr = "상위 문서: "
         for (var i = 0; i < plist.length; i++) {
-            pr += `<a href="${plist[i].url}">${plist[i].title}</a>`;
+            pr += `<a href="/blogwiki${plist[i].url}">${plist[i].title}</a>`;
             if (i < plist.length - 1) {
                 pr += `<span> / </span>`;
             }
