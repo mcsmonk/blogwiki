@@ -8,12 +8,12 @@ updated : 2023-01-27 23:33:03 +0900
 regenerate: true
 ---
 
-## [[/_category/diary]]
+## [[diary]]
 
 * [[/memo/iamroot16]]
 
 
-## [[/_category/how-to]]
+## [[how-to]]
 
 * [[/how-to/mathjax-latex]]
 * [[/how-to/ipynb]]
@@ -21,7 +21,7 @@ regenerate: true
 * [[/how-to/wsl-jekyll-setting]]
 
 
-## [[/_category/unclassified]]
+## [[unclassified]]
 
 <!--
 * [[filename]]{title}

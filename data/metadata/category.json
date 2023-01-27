@@ -3,5 +3,9 @@
  "title": "Category",
  "url": "/wiki/category",
  "updated": "2023-01-27 23:33:03 +0900",
- "children": []
+ "children": [
+  "diary",
+  "how-to",
+  "unclassified"
+ ]
 }

@@ -9,7 +9,7 @@
      */
     const target = getTarget();
 
-    fetch(`/blogwiki/data/metadata/_category/${target}.json`)
+    fetch(`/blogwiki/data/metadata/${target}.json`)
         .then(response => response.json())
         .then(function(data) {
             if (data == null) {

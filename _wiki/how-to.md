@@ -8,7 +8,7 @@ tag     : how-to
 resource: 0F/DC51F7-C589-4684-B317-2A41C2212F67
 toc     : true
 public  : true
-parent  : [[index]]
+parent  : [[category]]
 latex   : false
 ---
 * TOC

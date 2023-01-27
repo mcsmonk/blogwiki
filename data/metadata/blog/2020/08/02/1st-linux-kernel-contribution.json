@@ -1,9 +1,0 @@
-{
- "type": "blog",
- "title": "리눅스 커널 첫 컨트리뷰션 과정",
- "summary": "패치 제출 및 과정 정리",
- "url": "/blog/2020/08/02/1st-linux-kernel-contribution",
- "updated": "2020-09-21 22:00:00 +0900",
- "resource": "DE/BDA86C-A752-4D5B-BD20-E8DB62D1FA2C",
- "children": []
-}

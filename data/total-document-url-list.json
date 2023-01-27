@@ -1,12 +1,12 @@
 [
- "/wiki/_category/diary",
- "/wiki/_category/how-to",
- "/wiki/_category/unclassified",
  "/wiki/category",
+ "/wiki/diary",
+ "/wiki/how-to",
  "/wiki/how-to/first-linux-kernel-contribution",
  "/wiki/how-to/ipynb",
  "/wiki/how-to/mathjax-latex",
  "/wiki/how-to/wsl-jekyll-setting",
  "/wiki/index",
- "/wiki/memo/iamroot16"
+ "/wiki/memo/iamroot16",
+ "/wiki/unclassified"
 ]

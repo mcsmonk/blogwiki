@@ -41,7 +41,7 @@ regenerate: true
 {% endfor %}
 {% assign documents = documents | sort: 'updated' | reverse %}
 {% for doc in documents limit: 30 %}
-    {% if doc.public == true and doc.title != 'index' and doc.title != 'Category'%}
+    {% if doc.public == true and doc.title != 'index' and doc.layout != 'category' and doc.title != 'Category'%}
         <li>
             <div class="post-item">
                 <a class="post-link" href="{{ doc.url | prepend: site.baseurl }}">

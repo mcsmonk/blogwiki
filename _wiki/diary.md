@@ -8,7 +8,7 @@ tag     : diary
 resource: B42E3A/44-1FAD-4EDE-8FAC-61E66A7A7D58
 toc     : true
 public  : true
-parent  : [[index]]
+parent  : [[category]]
 latex   : false
 ---
 * TOC

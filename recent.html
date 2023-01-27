@@ -11,7 +11,8 @@ adsense: false
 <div id="app">
     <H3 class="indent">recent</H3>
     <ul class="post-list">
-{% for doc in documents %}{% if doc.public != false and doc.title != 'index' and doc.title != 'Category' %}
+{% for doc in documents %}
+{% if doc.public != false and doc.title != 'index' and doc.layout != 'category' and doc.title != 'Category' %}
         <li>
             <div>
                 <a class="post-link" href="{{ doc.url | prepend: site.baseurl }}">
@@ -23,7 +24,8 @@ adsense: false
                 </a>
             </div>
         </li>
-{% endif %}{% endfor %}
+{% endif %}
+{% endfor %}
     </ul>
 </div>
 {% include createLink.html %}
