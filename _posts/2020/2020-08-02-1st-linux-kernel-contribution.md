@@ -1,7 +1,7 @@
 ---
 layout  : post
 title   : 리눅스 커널 첫 컨트리뷰션 과정
-summary : 리눅스 커널 패치 제출 및 과정 정리
+summary : 패치 제출 및 과정 정리
 date    : 2020-08-02 20:00:00 +0900
 updated : 2020-09-21 22:00:00 +0900
 tag     : study linux record

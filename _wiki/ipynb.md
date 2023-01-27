@@ -1,6 +1,6 @@
 ---
 layout  : wiki
-title   : jupyter notebook wiki 게시 테스트 포스트
+title   : jupyter notebook을 wiki에 게시하기
 summary :
 date    : 2021-06-04 20:00:00 +0900
 updated : 2021-06-04 20:00:00 +0900

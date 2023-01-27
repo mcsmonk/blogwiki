@@ -11,7 +11,7 @@ regenerate: true
 ## [[how-to]]
 
 * [[mathjax-latex]]
-
+* [[ipynb]]
 
 ---
 
