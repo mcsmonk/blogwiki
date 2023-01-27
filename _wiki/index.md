@@ -10,17 +10,18 @@ regenerate: true
 
 ## [[/_category/diary]]
 
+* [[/memo/iamroot16]]
+
 
 ## [[/_category/how-to]]
 
 * [[/how-to/mathjax-latex]]
 * [[/how-to/ipynb]]
+* [[/how-to/first-linux-kernel-contribution]]
+* [[/how-to/wsl-jekyll-setting]]
+
 
 ## [[/_category/unclassified]]
-
-* [[iamroot16]]
-* [[first-linux-kernel-contribution]]
-* [[wsl-jekyll-setting]]
 
 <!--
 * [[filename]]{title}
