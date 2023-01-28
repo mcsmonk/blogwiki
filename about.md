@@ -8,46 +8,34 @@ latex: true
 * TOC
 {:toc}
 
-<div class="contact">
-{% if site.github_username %}
-        <a href="https://github.com/{{ site.github_username }}">GitHub</a>
-{% endif %}
-{% if site.twitter_username %}
-        <a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>
-{% endif %}
-{% if site.email %}
-        <a href="mailto:{{ site.email }}">Email</a>
-{% endif %}
-        <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
-</div>
-
-## Motto
-
-> Whenever you fall, pick something up. – Oswald Avery
-
+<p align='center'>
+        <img src="https://sunghyunjin.com/assets/img/seminar.jpg" alt="drawing" style="width:200px;"/>
+        <br>
+        <em>Seminar, Sunghyun Jin</em>
+</p>
+<!--
+![seminar](https://sunghyunjin.com/assets/img/seminar.jpg)
+-->
 
 ## About Me
 
-* 수학과 과학을 동경합니다.
-* 소프트웨어 개발자입니다.
+* 대학교에서 수학과 컴퓨터과학을 전공했습니다
+* 대학원에서 암호 공학의 한 분야인 부채널 분석을 전공했습니다
+* to be written
 
 ## Life
 
-* 실내에 있는 것을 좋아합니다.
-* 근처에 컴퓨터가 있어야 마음이 놓입니다.
-
-## 기고
-
-* 20xx-xx-xx [title]( https://mcsmonk.github.io/blogwiki/about ) - where
-
-## 인터뷰, 발표
-
-* 20xx-xx-xx [xxx]( https://mcsmonk.github.io/blogwiki/about )
+* to be written
 
 ## Job Experience
 
 - 삼성전자 - _2022-09-01 ~ 현재_
     - Security Software Engineer
+
+## 발표
+
+* to be written
+* 20xx-xx-xx [title]( /404.html ) - where
 
 ## Public Key
 
@@ -73,4 +61,26 @@ tNn9XPfVEG9GSyvAp4Ruw0eAY/GZvNAD
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
+## Contact
 
+<div class="contact">
+        <a href="https://sunghyunjin.com">homepage</a>
+{% if site.github_username %}
+        <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+{% endif %}
+{% if site.twitter_username %}
+        <a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>
+{% endif %}
+{% if site.email %}
+        <a href="mailto:{{ site.email }}">Email</a>
+{% endif %}
+        <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
+</div>
+
+<!--
+
+## Motto
+
+> Whenever you fall, pick something up. – Oswald Avery
+
+-->
