@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mcsmonk.github.io/blogwiki/sitemap.xml
+Sitemap: https://sunghyunjin.com/blogwiki/sitemap.xml
