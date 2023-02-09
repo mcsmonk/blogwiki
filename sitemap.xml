@@ -8,18 +8,18 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>{{ site.dnsurl }}/wiki/index/</loc>
+        <loc>{{ site.baseurl | prepend: site.dnsurl }}/wiki/index/</loc>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>{{ site.dnsurl }}/blog/</loc>
+        <loc>{{ site.baseurl | prepend: site.dnsurl }}/blog/</loc>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
 {% for post in site.posts %}
     <url>
-        <loc>{{ site.dnsurl }}{{ post.url }}</loc>
+        <loc>{{ site.baseurl | prepend: site.dnsurl }}{{ post.url }}</loc>
     {% if post.updated == null %}
         <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
     {% else %}
@@ -42,7 +42,7 @@
 {% for doc in documents %}
     {% if doc.public == true and doc.title != 'wiki index'%}
     <url>
-        <loc>{{ site.dnsurl }}{{ doc.url }}</loc>
+        <loc>{{ site.baseurl | prepend: site.dnsurl }}{{ doc.url }}</loc>
         {% if doc.updated == null %}
             <lastmod>{{ doc.date | date_to_xmlschema }}</lastmod>
         {% else %}
