@@ -10,7 +10,10 @@ regenerate: true
 
 ## [[diary]]
 
-* [[/memo/iamroot16]]
+* Life
+    * [[/memo/2023]]
+* Record
+    * [[/memo/iamroot16]]
 
 
 ## [[how-to]]
