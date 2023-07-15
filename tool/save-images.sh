@@ -2,7 +2,7 @@
 
 # github에 올린 user-images를 자동으로 다운로드합니다.
 
-NUM=1855714
+NUM=4795889
 
 CHANGE_LIST=`git diff --exit-code --cached --name-only --diff-filter=ACM -- '*.md'`
 
@@ -18,10 +18,12 @@ for CHANGED_FILE in $CHANGE_LIST; do
     mkdir -p $TARGET_PATH
 
     # 작업 대상 파일에서 참조하고 있는 github에 등록된 리소스 파일들의 URI 목록
+    # URI_LIST=`ag "https://github.com/mcsmonk/mcsmonk.github.io/assets/\/$NUM\/.*" -o $CHANGED_FILE`
     # URI_LIST=`ag "https://user-images\.githubuser.*?\/$NUM\/.*?(png|jpg|gif|mp4)" -o $CHANGED_FILE`
     # URI_LIST=`ag "https://pbs.twimg.com/media/.*?(png|jpg|gif|mp4)" -o $CHANGED_FILE`
 
-    URI_LIST=`ag "https://((user-images\.githubuser.*?\/$NUM\/)|(pbs.twimg.com/media/)|(video.twimg.com/.+_video/)).*?(png|jpg|gif|mp4)" -o $CHANGED_FILE`
+    URI_LIST=`ag "https://((user-images\.githubuser.*?\/$NUM\/)|(pbs.twimg.com/media/)|(video.twimg.com/.+_video/)|(github.com/mcsmonk/mcsmonk.github.io/assets\/$NUM\/)).*?(png|jpg|gif|mp4)" -o $CHANGED_FILE`
+    # URI_LIST=`ag "https://github.com/mcsmonk/mcsmonk.github.io/assets\/$NUM\/.*?(png|jpg|gif|mp4)" -o $CHANGED_FILE`
 
     for URI in $URI_LIST; do
         FILE_NAME=`echo $URI | sed 's,^.*/,,'`
