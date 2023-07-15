@@ -16,7 +16,7 @@ fi
 
 echo "진행"
 
-TO_RESOURCE_DIR=`head $FILE_ADDR | ag -o "[A-F0-9]{2}/[A-F0-9-]{34}$"`
+TO_RESOURCE_DIR=`head $FILE_ADDR | ag -o "[A-F0-9]{6}/[A-F0-9-]{30}$"`
 
 # /resource/wiki/filename 리소스인 경우
 RESOURCE_NAME_LIST=`ag "\/resource\/wiki\/.*?" "$FILE_ADDR" | ag -o "/resource/wiki/[^ ]*\.(jpg|png|gif|JPG|mp4|svg|jpeg|pdf|PNG|xlsm)"`
