@@ -4,8 +4,7 @@
 
 NUM=4795889
 
-#CHANGE_LIST=`git diff --exit-code --cached --name-only --diff-filter=ACM -- '*.md'`
-CHANGE_LIST='_wiki/memo/2023.md'
+CHANGE_LIST=`git diff --exit-code --cached --name-only --diff-filter=ACM -- '*.md'`
 
 echo $CHANGE_LIST
 
@@ -29,13 +28,14 @@ for CHANGED_FILE in $CHANGE_LIST; do
 
     URI_LIST=`ag "https://((user-images\.githubuser.*?\/$NUM\/)|(pbs.twimg.com/media/)|(video.twimg.com/.+_video/)).*?(png|jpg|gif|mp4)" -o $CHANGED_FILE`
     #URI_LIST=`ag "https://github.com/mcsmonk/mcsmonk.github.io/assets/$NUM/[a-zA-Z0-9-]+" -o $CHANGED_FILE`
-
+sunghyunjin.com/blogwiki/resource/14D861/B8-96A4-4808-97FA-79E3BF206E72/253731648-d034b2ac-1b1f-48a0-8ef6-082620d34405.jpg
     for URI in $URI_LIST; do
         FILE_NAME=`echo $URI | sed 's,^.*/,,'`
         echo $FILE_NAME
         RESOLVE_FILE_PATH="$TARGET_PATH/$FILE_NAME"
         echo $RESOLVE_FILE_PATH
         RESOLVE_URL=`echo "$RESOLVE_FILE_PATH" | sed -E 's/^\.//'`
+        RESOLVE_URL="https://sunghyunjin.com/blogwiki$RESOLVE_URL"
         echo $RESOLVE_URL
 
         echo "작업 대상 URI: [$URI]"
