@@ -4,7 +4,7 @@ title   : index
 toc     : true
 public  : true
 comment : false
-updated : 2023-01-27 23:33:03 +0900
+updated : 2023-10-02 17:10:00 +0900
 regenerate: true
 ---
 
@@ -14,7 +14,8 @@ regenerate: true
     * [[/memo/2023]]
 * Record
     * [[/memo/iamroot16]]
-
+* Book
+    * [[books]]
 
 ## [[how-to]]
 
@@ -22,7 +23,6 @@ regenerate: true
 * [[/how-to/ipynb]]
 * [[/how-to/first-linux-kernel-contribution]]
 * [[/how-to/wsl-jekyll-setting]]
-
 
 ## [[unclassified]]
 
