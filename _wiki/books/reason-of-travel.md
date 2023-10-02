@@ -9,7 +9,7 @@ resource: 4E6C57/00-88F1-48B5-B0D2-EDE81B1CCBC2
 toc     : true
 comment : true
 public  : true
-parent  : [[books]]
+parent  : [[book]]
 latex   : false
 ---
 * TOC

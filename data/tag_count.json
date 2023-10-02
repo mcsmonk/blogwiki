@@ -1,5 +1,9 @@
 [
  {
+  "name": "book",
+  "size": 1
+ },
+ {
   "name": "diary",
   "size": 1
  },

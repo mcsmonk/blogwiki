@@ -9,7 +9,7 @@ resource:
 toc     : true
 comment : true
 public  : false
-parent  : [[books]]
+parent  : [[book]]
 latex   : false
 ---
 * TOC

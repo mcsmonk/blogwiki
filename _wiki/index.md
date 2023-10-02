@@ -15,7 +15,7 @@ regenerate: true
 * Record
     * [[/memo/iamroot16]]
 * Book
-    * [[books]]
+    * [[book]]
 
 ## [[how-to]]
 
