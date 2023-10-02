@@ -13,6 +13,7 @@ regenerate: true
 * Life
     * [[/memo/2023]]
 * Record
+    * [[/memo/presentation]]
     * [[/memo/iamroot16]]
 * Book
     * [[book]]
