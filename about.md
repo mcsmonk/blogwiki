@@ -21,13 +21,16 @@ latex: true
 
 * 대학교에서 수학과 컴퓨터과학을 전공했습니다
 * 대학원에서 암호 공학의 한 분야인 부채널 분석을 전공했습니다
-* 관심 있는게 많은데 찍먹을 하는 경우가 많아, 깊게 파는 노력을 합니다
+* 시간을 쏟아 진심을 다하면 결과를 얻는다란 생각을 가지고 있습니다
+* 세상은 혼자 사는 것이 아니라 다같이 사는 것이고 협동이 중요하단 생각을 가지고 있습니다.
+* 행복하기 위해 선의를 가져야 한다는 생각을 가지고 있습니다.
 
 ## Job Experience
 
 - 삼성전자 - _2022-09-01 ~ 현재_
     - Security Software Engineer
-        - SSD Security, Attestation, Confidential Computing
+        - SSD Security
+            - Attestation, Root of Trust, Confidential Computing, PCIe Security
 
 ## Public Key
 
