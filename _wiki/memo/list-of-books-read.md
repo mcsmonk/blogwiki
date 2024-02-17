@@ -4,7 +4,7 @@ title   : List of Books Read
 summary :
 date    : 2024-02-15 22:00:00 +0900
 updated : 2024-02-15 22:00:00 +0900
-tag     : diary, book
+tag     : diary book
 resource: 0A5B7B/8D-C0DA-41EE-A762-C3265093D6E4
 toc     : true
 comment : true
